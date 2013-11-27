@@ -1,0 +1,44 @@
+<div id="header-wrapper">
+    <header>
+        <a ng-hide="user" href="#/login" class="signIn">Sign In</a>
+        <a ng-show="user" class="signIn" ng-click="logout()">Sign Out</a>
+        <div id="logo">
+            <a href="" ng-href="#home">Promo-U</a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#/new">New</a></li>
+                <li><a href="">Best</a></li>
+                <li><a href="#/upload">Upload</a></li>
+                <li><a>Search</a></li>
+            </ul>
+        </nav>
+    </header>
+</div>   <!-- header wrapper -->
+
+<div id="content-wrapper">
+    <div class="row" id="content">
+        <div class="col-md-12">
+            <h1 style="text-align: center">See whats new today! {{user.name}}</h1>
+
+            <div class="col-md-12">
+                <div class="video-container" ng-repeat="video in videos">
+                    <iframe allowfullscreen="" src="{{ video.url }}" frameborder="0"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="footer-content">
+    <footer>
+        <ul>
+            <li><a href="">Contact</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Terms</a></li>
+        </ul>
+
+    </footer>
+</div>
+
+

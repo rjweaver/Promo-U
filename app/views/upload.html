@@ -1,0 +1,50 @@
+<div id="header-wrapper">
+    <div class="smallNav">
+        <a href="#/home" id="logo-sm">Promo-U</a>
+        <nav style="float:right" >
+            <ul>
+                <li><a>New</a></li>
+                <li><a>Best</a></li>
+                <li><a>Upload</a></li>
+                <li><a>Search</a></li>
+            </ul>
+        </nav>
+    </div>
+</div>
+
+<div id="content-wrapper">
+    <div id="content">
+        <div class="container left">
+            <h3>Upload a video</h3>
+            <form class="form-horizontal" ng-submit="addVideo()">
+                <div class="form-group">
+                    <label>Title</label>
+                    <input type="text" ng-model="vidTitle" placeholder="Enter a Title"/>
+                </div>
+                <div class="form-group">
+                    <label>Description</label>
+                    <input type="text" ng-model="vidDesc" placeholder="Enter a Description"/>
+                </div>
+                <div class="form-group">
+                    <label>URL</label>
+                    <input type="text" ng-model="vidLink" placeholder="Embed URL eg '//www.youtube.com/embed/XxXxxX' "/>
+                </div>
+                <button type="submit" class="btn btn-primary">Upload</button>
+            </form>
+
+
+        </div>
+
+        <div class="container right">
+            <h3>Preview</h3>
+            <div class="col-md-12">
+                <div class="video-container">
+                    <h4>{{ vidTitle }}</h4>
+                    <iframe allowfullscreen="" src="{{ vidLink }}" frameborder="0"></iframe>
+                    <p>{{ vidDesc }}</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

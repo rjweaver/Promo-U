@@ -1,0 +1,24 @@
+<div id="full-page-wrapper">
+    <div class="smallNav">
+        <a id="logo-sm" class="left" href="#/home">Promo-U</a>
+        <nav style="float:right" >
+            <ul>
+                <li><a>New</a></li>
+                <li><a>Best</a></li>
+                <li><a>Upload</a></li>
+                <li><a>Search</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="form-center">
+    <h1>Login Here</h1>
+
+        <button ng-hide="user" type="button" ng-click="login()" class="btn btn-default btn-block">Sign in with Facebook</button>
+
+        <h2 ng-show="user">Hello, {{ user.name }}</h2>
+
+        <button ng-show="user" type="button" ng-click="logout()" class="btn btn-default btn-block">Sign Out</button>
+
+
+    </div>
+</div> <!-- Full page wrapper -->
