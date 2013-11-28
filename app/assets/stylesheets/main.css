@@ -9,6 +9,10 @@ header{
     height: 200px;
     width:1000px;
     margin: 0 auto;
+    color:whitesmoke;
+
+    font-size: 18px;
+    cursor: pointer;
 }
 
 #logo{
@@ -45,27 +49,35 @@ header nav ul li a{
 }
 header nav ul li a:hover{
     text-decoration: none;
-    color: #ddd;
+    color: #111;
 }
 .signIn{
     position: relative;
     float:right;
     margin: 10px 40px 0 0;
-    color: white;
-    font-size: 18px;
-    cursor: pointer;
     text-decoration: none;
+}
+.username{
+    position: relative;
+    margin: 10px;
 }
 
 /* MAIN CONTENT SECTION */
 #content-wrapper{
     /*top: 200px; */
+    background-color: #cdfefc;
 }
 #content{
     width:1000px;
     margin:0 auto;
     min-height: 400px;
     padding-bottom: 20px;
+}
+.list-container{  /*idk about this class*/
+    width:90%;
+    min-height: 280px;
+    margin:0 auto;
+    border-bottom: 1px solid #ddd;
 }
 .container{
     width:480px;
@@ -115,6 +127,7 @@ footer ul{
     position:relative;
     top: 20px;
     right: 400px;
+    margin-bottom: 0;
 }
 footer ul li{
     float: right;

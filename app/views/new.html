@@ -1,1 +1,31 @@
-<h1>NEW VIDEOS</h1>
+<div id="header-wrapper">
+    <div class="smallNav">
+        <a href="#/home" id="logo-sm">Promo-U</a>
+        <nav style="float:right" >
+            <ul>
+                <li><a href="#/new">New</a></li>
+                <li><a href="">Best</a></li>
+                <li><a href="#/upload">Upload</a></li>
+                <li><a href="">Search</a></li>
+            </ul>
+        </nav>
+    </div>
+</div>
+
+<div id="content-wrapper">
+    <div id="content">
+        <h2 style="margin-top: 0; padding-top: 10px; text-align: center">New Videos</h2>
+        <div class="list-container full" ng-repeat="video in videos">
+            <div class="col-md-6" >
+                <h3>{{ video.title }}</h3>
+                <hr>
+                <p>{{ video.description }}</p>
+            </div>
+            <div class="col-md-6" >
+                <div class="video-container">
+                    <iframe allowfullscreen="" src="{{ video.url }}" frameborder="0"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

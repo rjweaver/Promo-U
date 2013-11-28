@@ -116,3 +116,11 @@ app.controller('uploadController', ['$scope','angularFireCollection', function($
 
 }]);
 
+app.controller('newController', ['$scope','angularFire', function($scope, angularFire){
+
+    // get the videos in storage for viewing on the home page
+    var ref = new Firebase('https://the-weaver-project.firebaseio.com/videos');
+    angularFire(ref, $scope, 'videos');
+
+}]);
+

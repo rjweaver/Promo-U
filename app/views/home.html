@@ -2,6 +2,7 @@
     <header>
         <a ng-hide="user" href="#/login" class="signIn">Sign In</a>
         <a ng-show="user" class="signIn" ng-click="logout()">Sign Out</a>
+        <p class="right username">{{user.name}}</p>
         <div id="logo">
             <a href="" ng-href="#home">Promo-U</a>
         </div>
@@ -19,7 +20,7 @@
 <div id="content-wrapper">
     <div class="row" id="content">
         <div class="col-md-12">
-            <h1 style="text-align: center">See whats new today! {{user.name}}</h1>
+            <h1 style="text-align: center">See whats featured today!</h1>
 
             <div class="col-md-12">
                 <div class="video-container" ng-repeat="video in videos">
